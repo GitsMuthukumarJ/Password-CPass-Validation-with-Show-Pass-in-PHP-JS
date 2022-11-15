@@ -103,7 +103,7 @@
                     <form action="" method="POST">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Please enter your secure new password here</label>
-                            <input type="password" name="password" id="password" class="form-control form-control-sm" placeholder="Create password" required>
+                            <input type="password" name="password" id="password" class="form-control form-control-sm" minlength="8" placeholder="Create password" required>
                             </br>
                             <input type="password" name="cpassword" id="cpassword" class="form-control form-control-sm" placeholder="Confirm Password" onkeyup="validate_password()" required>
                             <span id="wrong_pass_alert"></span><br>
