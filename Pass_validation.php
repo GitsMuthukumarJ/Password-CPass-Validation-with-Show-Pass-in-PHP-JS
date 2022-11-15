@@ -120,6 +120,23 @@
         </div>
 
 <script>
+    function myFunction() {
+        var pwd = document.getElementById("password");
+        var cpwd = document.getElementById("cpassword");
+        if (pwd.type === "password") {
+            pwd.type = "text";
+        } else {
+            pwd.type = "password";
+        }
+        if (cpwd.type === "password") {
+            cpwd.type = "text";
+        } else {
+            cpwd.type = "password";
+        }
+    }
+</script>
+
+<script>
     function validate_password() {
         var pass = document.getElementById('password').value;
         var confirm_pass = document.getElementById('cpassword').value;
